@@ -92,6 +92,11 @@
 
 ## Этапы конвейера
 
+<details>
+  <summary>📸 Посмотреть DAG Dependencies</summary>
+  <img src="assets/dag_dependencies.png" alt="DAG Dependencies" width="100%">
+</details>
+
 ### 1. Загрузка данных из API
 
 DAG:
@@ -207,6 +212,12 @@ dm.fct_count_day_weather
 
 ## Airflow DAGs
 
+<details>
+  <summary>📸 Посмотреть DAGs</summary>
+  <img src="assets/airflow_dags.png" alt="Airflow DAGs" width="100%">
+</details>
+
+
 | DAG                           | Назначение                                |
 | ----------------------------- | ----------------------------------------- |
 | raw_from_api_to_s3            | Получение данных из API и сохранение в S3 |
@@ -222,7 +233,11 @@ dm.fct_count_day_weather
 
 ### Metabase
 
-![alt text](assets/metabase_dashboard.png)
+
+<details>
+  <summary>📸 Посмотреть дашборд (Metabase Dashboard)</summary>
+  <img src="screenshots/metabase_dashboard.png" alt="Metabase Dashboard" width="100%">
+</details>
 
 Дашборд содержит:
 
