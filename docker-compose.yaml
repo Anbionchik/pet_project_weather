@@ -303,7 +303,8 @@ services:
         fi
         mkdir -p /sources/logs /sources/dags /sources/plugins
         chown -R "${AIRFLOW_UID}:0" /sources/{logs,dags,plugins}
-        exec /entrypoint airflow version
+        /entrypoint airflow db init
+        airflow variables import /sources/airflow_variables.json
     # yamllint enable rule:line-length
     environment:
       <<: *airflow-common-env

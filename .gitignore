@@ -211,3 +211,4 @@ data/
 logs/
 /metabase/metabase-files/metabase.jar
 /cred.py
+airflow_variables.json
