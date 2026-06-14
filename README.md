@@ -222,9 +222,7 @@ dm.fct_count_day_weather
 
 ### Metabase
 
-```text
-assets/metabase_dashboard.png
-```
+![alt text](assets/metabase_dashboard.png)
 
 Дашборд содержит:
 
