@@ -12,7 +12,7 @@ DAG_ID = "fct_count_records_day_weather"
 LAYER = "raw"
 SOURCE = "weather"
 SCHEMA = "dm"
-TARGET_TABLE = "fct_count_records_day_weather"
+TARGET_TABLE = "fct_count_day_weather"
 
 # DWH
 PG_CONNECT = "postgres_dwh"
