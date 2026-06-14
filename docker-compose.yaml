@@ -102,6 +102,7 @@ services:
       - "5432:5432"
     volumes:
       - postgres-dwh-volume:/var/lib/postgresql/data
+      - ./infrastructure/postgres/init:/docker-entrypoint-initdb.d 
 
   minio:
     image: minio/minio:RELEASE.2025-02-18T16-25-55Z
@@ -140,7 +141,7 @@ services:
       POSTGRES_PASSWORD: airflow
       POSTGRES_DB: airflow
     volumes:
-      - postgres-db-volume:/var/lib/postgresql/data
+      - postgres-db-volume:/var/lib/postgresql/data 
     healthcheck:
       test: ["CMD", "pg_isready", "-U", "airflow"]
       interval: 10s
@@ -305,6 +306,7 @@ services:
         chown -R "${AIRFLOW_UID}:0" /sources/{logs,dags,plugins}
         /entrypoint airflow db init
         airflow variables import /sources/airflow_variables.json
+        airflow connections import /sources/airflow_connections.json
     # yamllint enable rule:line-length
     environment:
       <<: *airflow-common-env
