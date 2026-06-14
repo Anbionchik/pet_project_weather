@@ -1,0 +1,10 @@
+{
+  "postgres_dwh": {
+    "conn_type": "postgres",
+    "host": "postgres_dwh",
+    "schema": "postgres",
+    "login": "",
+    "password": "",
+    "port": 5432
+  }
+}
