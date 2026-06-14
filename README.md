@@ -236,7 +236,7 @@ dm.fct_count_day_weather
 
 <details>
   <summary>📸 Посмотреть дашборд (Metabase Dashboard)</summary>
-  <img src="screenshots/metabase_dashboard.png" alt="Metabase Dashboard" width="100%">
+  <img src="assets/metabase_dashboard.png" alt="Metabase Dashboard" width="100%">
 </details>
 
 Дашборд содержит:
