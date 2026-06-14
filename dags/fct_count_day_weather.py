@@ -10,7 +10,7 @@ DAG_ID = "fct_count_records_day_weather"
 
 # Используемые таблицы в DAG
 LAYER = "raw"
-SOURCE = "earthquake"
+SOURCE = "weather"
 SCHEMA = "dm"
 TARGET_TABLE = "fct_count_records_day_weather"
 
